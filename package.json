@@ -1,0 +1,53 @@
+{
+  "name": "nopcommerce-automation-demo",
+  "version": "1.0.0",
+  "description": "E-commerce test automation with Microsoft Playwright Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:chrome": "playwright test --project=chromium",
+    "test:parallel": "playwright test --workers=5",
+    "test:auth": "cross-env TEST_ENV=auth playwright test --project=chromium --headed tests/auth.spec.ts",
+    "test:demo": "cross-env TEST_ENV=demo playwright test",
+    "test:test": "cross-env TEST_ENV=test playwright test",
+    "test:staging": "cross-env TEST_ENV=staging playwright test",
+    "test:production": "cross-env TEST_ENV=production playwright test",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://demo.nopcommerce.com",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"**/*.{ts,json,md}\"",
+    "pretest": "npm run lint"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "e2e",
+    "automation",
+    "typescript",
+    "nopcommerce",
+    "cloud-testing"
+  ],
+  "author": "QA Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "allure-playwright": "^2.15.1",
+    "cross-env": "^10.1.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-playwright": "^0.20.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.3.1"
+  }
+}

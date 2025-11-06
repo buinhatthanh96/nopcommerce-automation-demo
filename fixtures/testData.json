@@ -1,0 +1,38 @@
+{
+  "validUser": {
+    "email": "testuser@example.com",
+    "password": "Test@123456"
+  },
+  "categories": [
+    "Computers",
+    "Electronics",
+    "Apparel",
+    "Digital downloads",
+    "Books",
+    "Jewelry",
+    "Gift Cards"
+  ],
+  "subcategories": {
+    "Computers": ["Desktops", "Notebooks", "Software"],
+    "Electronics": ["Camera & photo", "Cell phones"],
+    "Apparel": ["Shoes", "Clothing", "Accessories"]
+  },
+  "manufacturers": ["Apple", "HP", "Samsung"],
+  "searchKeywords": {
+    "valid": ["samsung", "apple", "laptop", "phone"],
+    "invalid": ["xyzabc123", "nonexistentproduct"]
+  },
+  "sortOptions": [
+    "Position",
+    "Name: A to Z",
+    "Name: Z to A",
+    "Price: Low to High",
+    "Price: High to Low",
+    "Created on"
+  ],
+  "priceRanges": [
+    { "min": "0", "max": "1000" },
+    { "min": "1000", "max": "5000" },
+    { "min": "500", "max": "2000" }
+  ]
+}
