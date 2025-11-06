@@ -14,7 +14,6 @@ Comprehensive test automation framework for nopCommerce demo store using **Playw
 
 ## ✨ Features
 
-- ✅ **37 comprehensive test cases** covering all required e-commerce flows
 - ✅ **Page Object Model (POM)** architecture for maintainability
 - ✅ **Cross-browser testing** (Chromium, Firefox, WebKit)
 - ✅ **Parallel execution** for faster test runs
