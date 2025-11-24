@@ -119,9 +119,8 @@ export class SearchPage extends BasePage {
 
   async filterByPriceRange(min: string, max: string) {
     // Use jQuery UI slider API to set values
-    // @ts-ignore - $ is available in browser context
     await this.page.evaluate(([minVal, maxVal]) => {
-      // @ts-ignore - $ is available in browser context
+      // @ts-expect-error - $ is available in browser context
       const slider = $('#price-range-slider');
       if (slider.length) {
         slider.slider('values', [parseInt(minVal), parseInt(maxVal)]);
