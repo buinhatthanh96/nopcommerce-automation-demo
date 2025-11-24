@@ -1,14 +1,18 @@
 name: Playwright Cloud Tests
 
-on:
-  push:
-    branches: [ main, develop ]
-  pull_request:
-    branches: [ main ]
-  schedule:
-    # Run tests daily at midnight UTC
-    - cron: '0 0 * * *'
-  workflow_dispatch:  # Allow manual trigger
+# Temporarily disabled for testing
+# on:
+#   push:
+#     branches: [ main, develop ]
+#   pull_request:
+#     branches: [ main ]
+#   schedule:
+#     # Run tests daily at midnight UTC
+#     - cron: '0 0 * * *'
+#   workflow_dispatch:  # Allow manual trigger
+
+on: 
+  workflow_dispatch: 
 
 env:
   NODE_VERSION: '18'
